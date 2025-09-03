@@ -1,0 +1,182 @@
+/*RESET DE MARGEM E PADDING*/
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/*CORPO DA PÁGINA E FONTE*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+/*CONTEÚDO INTERNO DO CABEÇALHO*/
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+.navbar{
+    background-color: #1e1b4b;
+    width: 100%;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #1e1b4b;
+    z-index: 99;
+}
+
+/*CONTEÚDO INTERNO DA BARRA DE NAVEGAÇÃO*/
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*LOGO DO SITE*/
+.logo{
+    color: #b45c09;
+}
+
+/*COR DA PARTE "COMMERCE" DA LOGO*/
+.logo span{
+    color: #f4f4f4;
+}
+
+/*LISTA DE NAVEGAÇÃO*/
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*CONTEÚDO DOS ÍCONES DE NAVEGAÇÃO*/
+.nav-icon-conatainer{
+    display: flex;
+    align-items: center;
+}
+
+/*ESTILO DOS ÍCONES DE NAVEGAÇÃO*/
+.nav-icon-conatainer img{
+    width: 30px;
+    cursor: pointer;
+}
+
+/*ESPAÇAMENTO ENTRE OS ÍCONES DE NAVEGAÇÃO*/
+.nav-icon-conatainer img:first-child{
+    margin-right: 1rem;
+}
+
+/*ITENS DA LISTA DE NAVEGAÇÃO*/
+nav ul li{
+    color: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/*EFEITO DE HOVER NOS ITENS DA LISTA DE NAVEGAÇÃO*/
+nav ul li:hover{
+    transform:translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+/*ESCONDER ÍCONE DE MENU*/
+.menu-buttom{
+    display: none;
+}
+
+
+/*CORPO DO CABEÇALHO*/
+header{
+    background-image: radial-gradient(#fff, #8b28e7);
+}
+
+/*CORPO DO CABEÇALHO BOTÃO*/
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+/*LADO ESQUERDO DO CABEÇALHO*/
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+/*TÍTULO DO CABEÇALHO*/
+.header-bottom-side-left h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/*PARÁGRAFO DO CABEÇALHO*/
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*BOTÃO DO CABEÇALHO*/
+.header-bottom-side-left button{
+    background-color: #1e1b4b;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/*EFEITO DE HOVER NO BOTÃO DO CABEÇALHO*/
+.header-bottom-side-left button:hover{
+    background-color: #8b28e7;
+    transition: all 0.3s;
+}
+
+/*LADO DIREITO DO CABEÇALHO*/
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/*IMAGEM DO CABEÇALHO*/
+.header-bottom-side-right img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/*HEADER*/
+
+/*main content*/
+
+.purple-background{
+    background-color: #1e1b4b;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
