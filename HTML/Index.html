@@ -13,7 +13,7 @@
 <!--BARRAS DE NAVEGAÇÃO, SPAN SEPARANDO CORES DA LOGO, LISTA DO SITE, LINKAGEM DAS IMAGENS DE MENU E CARRINHO-->
 <!--TODA A PARTE DO CABEÇALHO E CORPO-->
 <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
         <div class="header-inner-content">
             
             <h1 class="logo"><i class="fa-solid fa-cart-plus"></i>Nex<span>Commerce</span></h1>            
@@ -48,6 +48,15 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-buttom");
+
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
 </body>
 </html>
 <!--teste-->

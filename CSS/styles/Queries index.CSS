@@ -4,6 +4,10 @@
     .logo{
         font-size: 1.2rem;
     }
+
+    .menu-buttom{
+        display: block;
+    }
     
     .header-bottom-side{
         flex-direction: column;
@@ -16,10 +20,15 @@
         background-color: #1e1b4b;
         width: 100%;
         top: 46px;
+        display: none;
     }
 
     nav ul{
         flex-direction: column;
+    }
+
+    .show-menu nav{
+        display: block;
     }
 
     nav ul li{
@@ -29,4 +38,3 @@
 
 
 }
-/*teste*/
