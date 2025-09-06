@@ -235,7 +235,7 @@ main{
     gap: 3rem;
 }
 
-
+/* Imagens nas colunas de produtos com ajuste responsivo */
 .cols-3 img{
     max-width: 100%;
 }
@@ -243,21 +243,24 @@ main{
     max-width: 100%;
 }
 
+/*RESPONSAVEL EM ALINHAS OS PRODUTOE LADO A LADO*/
 .cols-4{
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-
+/*TRASNFORMA O CURSOR EM POINTER*/
 .cols>*{
     cursor: pointer;
     transition: all 0.2s;
 }
 
+/*EFEITO QUE PERMITE QUE OS INTENS SE MOVAM SUAVEMENTE*/
 .cols>*:hover{
     transform: translateY(-5px);
 }
 
+/*RESPONSAVEL POR ALINHAR DAR COR PARA "PRODUTOS SELECIONADOS E ULTIMOS PRODUTOS"*/
 .section-tittle{
     text-align: center;
     margin-top: 4rem;
@@ -265,6 +268,7 @@ main{
     color: #f4f4f4;
 }
 
+/*RESPONSAVEL POR FAZER A LINHA LARANJA EMBAIXO DOS TITULOS*/ 
 .subtitle-underline{
     width: 100px;
     height: 5px;
@@ -273,6 +277,7 @@ main{
     margin: 8px auto 0 auto;
 }
 
+/*RESPONSAVEL PELO DESIGN DA DECRIÇÃO DOS PRODUTOS*/
 .product{
     color: #f4f4f4;
     margin-bottom: 1rem;
@@ -280,11 +285,13 @@ main{
     flex-direction: column;
 }
 
+/*RESPONSAVEL PELO GROSSURA DA LETA E PELO ESPAÇO ENTRE A IMAGEM*/
 .product-name{
     font-weight: 600;
     margin-top: 0.4rem;
 }
 
+/*RESPONSAVEL PELA COR DAS ESTRELAS E PELO TAMANHO*/
 .rate{
     color: #b45c09;
     font-size: 1.3rem;
@@ -294,12 +301,14 @@ main{
     font-weight: 600;
 }
 
+/*RESPONSAVEL POR FAZER O REVERSE DO CABEÇALHO DO RELOGIO*/
 .exclusive-container{
     color: #fff;
     flex-direction: row-reverse;
     padding: 5rem 1rem;
 }
 
+/*LIMITA O TAMNHO MAXIMO DA IMAGEM*/
 .exclusive-container img{
     max-width: 500px;
 }
@@ -311,24 +320,29 @@ main{
         font-size: 1rem;
     }
 
+    /* Transforma 3 colunas em 1 */
     .cols-3{
         grid-template-columns: repeat(1, 1fr);
     }
     
+     /* Transforma 4 colunas em 2 */
     .cols-4{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Ajusta os textos dos produtos para caber em telas menores */
     .product-name, .product-price, .rate{
         max-height: 1rem;
         overflow: hidden;
         font-size: 0.8rem;
     }
 
+    /* Altera o layout da seção exclusiva para coluna */
     .exclusive-conatiner{
         flex-direction: column-reverse;
     }
 
+    /* Dá espaçamento abaixo da imagem na versão mobile */
     .exclusive-conatiner img{
         margin-bottom: 4rem;
     }
@@ -345,6 +359,7 @@ main{
     justify-content: space-evenly;
 }
 
+/*CARD INDIVIDUAL PARA CADA COLABORADOR*/
 .testemunha{
     display: flex;
     flex-direction: column;
@@ -360,17 +375,20 @@ main{
     margin: 1rem;
 }
 
+/*LEVE TRANSIÇÃO PARA O CARD*/*
 .testemunha:hover{
     transform: translateY(-5px);
 }
+/*ESTILO DE PARAGRAFO DENTRO DO CARD*/
 .testemunha p{
     margin: 5px 0;
 }
-
+/*COR DO TEXTO*/
 .texto{
     color: #fff;
 }
 
+/*DESIGN DO CPRIMERIO PARAGRO DA DUAS VIRGULAS " */
 .testemunha p:first-child{
     font-weight: bold;
     font-size: 5rem;
@@ -379,11 +397,13 @@ main{
     line-height: 2rem;
 }
 
+/*ENGROSSA O NOME DO COLABORADOR*/
 .testemunha p:last-child{
     font-weight: bold;
 }
 
 /*media queries*/
+/* Responsividade para a seção de testemunhas */
 @media (max-width:800px){
     .testemunhas{
         flex-direction: column;
@@ -407,6 +427,7 @@ main{
     gap: 2rem;
 }
 
+/* Espaçamento entre os blocos de download de app */
 .download{
     margin: 1rem 0;
 }
@@ -415,23 +436,28 @@ main{
     margin: 1rem 0;
 }
 
+/* Título do bloco de download */
 .download>p:first-child{
     font-weight: bold;
     color: #fff;
 }
 
+/* Layout horizontal dos botões de download */
 .download>div{
     display: flex;
 }
 
+/* Tamanho das imagens dos botões de download */
 .download>div img{
     width: 180px;
 }
 
+/* Centraliza logo no rodapé */
 .logo-footer{
     text-align: center;
 }
 
+/* Estilo dos links do rodapé */
 .links-footer h3{
     color: #fff;
     margin-bottom: 0.8rem;
@@ -446,6 +472,7 @@ main{
     cursor: pointer;
 }
 
+/* Texto final de direitos autorais */
 .copyright{
     text-align: center;
     padding: 2rem 0;
@@ -453,7 +480,7 @@ main{
 }
 
 /*media queries*/
-
+/* Responsividade do footer */
 @media (max-width: 800px){
     .footer-content{
         display: inline;
