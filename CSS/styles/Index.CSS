@@ -5,14 +5,14 @@
     margin: 0%;
 }
 
-/*CORPO DA PÁGINA E FONTE*/
+/*CORPO DO CSS E FONTE USADA NA PAGINA*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*HEADER*/
 
-/*CONTEÚDO INTERNO DO CABEÇALHO*/
+/*CABEÇALHO ROXO ESCURO*/
 .header-inner-content{
     max-width: 1300px;
     margin-left: auto;
@@ -37,12 +37,12 @@ body{
     position: relative;
 }
 
-/*LOGO DO SITE*/
+/*COR DA LOGO "NEX"*/
 .logo{
     color: #b45c09;
 }
 
-/*COR DA PARTE "COMMERCE" DA LOGO*/
+/*COR DA LOGO "COMMERCE"*/
 .logo span{
     color: #f4f4f4;
 }
@@ -60,7 +60,7 @@ nav ul{
     align-items: center;
 }
 
-/*ESTILO DOS ÍCONES DE NAVEGAÇÃO*/
+/*TAMANHO DO ICONE CARRINHO E POINTER PARA MARCAR QUE É UM BOTÃO*/
 .nav-icon-conatainer img{
     width: 30px;
     cursor: pointer;
@@ -78,7 +78,7 @@ nav ul li{
     cursor: pointer;
 }
 
-/*EFEITO DE HOVER NOS ITENS DA LISTA DE NAVEGAÇÃO*/
+/*EFEITO DE NEGRITO NAS FERRAMENTAS DE NAVEGAÇÃO E LEVANTAMENTO*/
 nav ul li:hover{
     transform:translateY(-5px);
     transition: all 0.2s;
@@ -91,12 +91,12 @@ nav ul li:hover{
 }
 
 
-/*CORPO DO CABEÇALHO*/
+/*DEGRADE DE CORES, NA IMAGEM PRINCIPAL DO SITE*/
 header{
-    background-image: radial-gradient(#fff, #c7c7c7);
+    background-image: radial-gradient(#fff, #8b28e7);
 }
 
-/*CORPO DO CABEÇALHO BOTÃO*/
+/*CORPO DO CABEÇALHO NA IMAGEM PRINCIPAL*/
 .header-bottom-side{
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ header{
     padding: 1rem;
 }
 
-/*LADO ESQUERDO DO CABEÇALHO*/
+/*TAMANHO DA IMAGEM COM BASE NO CABEÇALHO PRINCIPAL*/
 .header-bottom-side-left{
     height: 100%;
     flex-basis: 50%;
@@ -116,15 +116,15 @@ header{
     margin-bottom: 1.5rem;
 }
 
-/*PARÁGRAFO DO CABEÇALHO*/
+/*ESPAÇAMENTO DO TITULO, FRASE E BOTÃO(VER MAIS), DO CABEÇALHO*/
 .header-bottom-side-left p{
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-/*BOTÃO DO CABEÇALHO*/
+/*DESIGN DO BOTÃO(VER MAIS)*/
 .header-bottom-side-left button{
-    background-color: #1e1b4b;
+    background-color: #110e44;
     border: none;
     cursor: pointer;
     padding: 0.8rem 3.8rem;
@@ -134,13 +134,13 @@ header{
     font-size: 1rem;
 }
 
-/*EFEITO DE HOVER NO BOTÃO DO CABEÇALHO*/
+/*EFEITO DE TRANSIÇÃO DE CORES DO BOTÃO(VER MAIS)*/
 .header-bottom-side-left button:hover{
-    background-color: #b45c09;
+    background-color: #8b28e7;
     transition: all 0.3s;
 }
 
-/*LADO DIREITO DO CABEÇALHO*/
+/*TAMANHO DO TEXTO DA IMAGEM COM BASE NO CABEÇALHO */
 .header-bottom-side-right{
     flex-basis: 50%;
     display: flex;
@@ -158,15 +158,16 @@ header{
 /*HEADER*/
 
 /*MEDIA QUERIES*/
-
 @media (max-width: 800px){
     .logo{
         font-size: 1.2rem;
     }
 
+    /*MEDIA RESPONSAVEL POR FAZER O BOTÃO DE MENU VOLTAR*/
     .menu-buttom{
         display: block;
     }
+    
     
     .header-bottom-side{
         flex-direction: column;
@@ -174,6 +175,7 @@ header{
         padding-top: 4rem;
     }
 
+    /*RESPONSAVEL PELO LAYOUT DO MENU BURGUER*/
     nav{
         position: absolute;
         background-color: #1e1b4b;
@@ -182,14 +184,17 @@ header{
         display: none;
     }
 
+    /*RESPONSAVEL POR FAZER O MENUR BURGER SER UMA COLUNA*/
     nav ul{
         flex-direction: column;
     }
 
+    /*RESPOSANVEL POR MOSTRAR O MENU*/
     .show-menu nav{
         display: block;
     }
 
+    /*RESPOSAVEL POR ALINHAS OS TEXTOS E DAR ESPAÇAMENTO*/
     nav ul li{
         text-align: center;
         padding: 0.8rem;    
@@ -201,22 +206,275 @@ header{
 
 /*main content*/
 
+/*RESPONSAVEL PELA COR DE PLANO DE FUNDO*/
+main{
+    background-color: #2c2a6c;
+}
+
+/*RESPONSAVEL PELA COR DO CABEÇALHO DO RELOGIO*/
 .purple-background{
     background-color: #1e1b4b;
 }
 
+/*RESPONSAVEL PELO TAMNHO DAS IMAGENS
 .page-inner-content{
     max-width: 1280px;
     margin: 0 auto;
 }
 
+/*SEÇÃO DE PRODUITOS*/
 .cols{
     display: grid;
     justify-content: space-evenly;
     padding: 4rem 1rem;
 }
 
+/*SEÇÃO PARA ALINHAR OS PRODUTOS EM UMA LINHA HORIZONTAL*/
 .cols-3{
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
+
+
+.cols-3 img{
+    max-width: 100%;
+}
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols-4{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.section-tittle{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #f4f4f4;
+}
+
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: #b45c09;
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+
+.product{
+    color: #f4f4f4;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate{
+    color: #b45c09;
+    font-size: 1.3rem;
+}
+
+.product-price span{
+    font-weight: 600;
+}
+
+.exclusive-container{
+    color: #fff;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+
+.exclusive-container img{
+    max-width: 500px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 800px){
+    .section-tittle{
+        font-size: 1rem;
+    }
+
+    .cols-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+
+    .exclusive-conatiner{
+        flex-direction: column-reverse;
+    }
+
+    .exclusive-conatiner img{
+        margin-bottom: 4rem;
+    }
+    
+}
+
+/*main content*/
+
+/*TESTEMUNHAS*/
+
+.testemunhas{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+.testemunha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 0 15px #8b28e7;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 1rem;
+}
+
+.testemunha:hover{
+    transform: translateY(-5px);
+}
+.testemunha p{
+    margin: 5px 0;
+}
+
+.texto{
+    color: #fff;
+}
+
+.testemunha p:first-child{
+    font-weight: bold;
+    font-size: 5rem;
+    color: #b45c09;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.testemunha p:last-child{
+    font-weight: bold;
+}
+
+/*media queries*/
+@media (max-width:800px){
+    .testemunhas{
+        flex-direction: column;
+    }
+
+    .testemunha{
+        margin-bottom: 1.2rem;
+    }
+}
+
+/*media queries*/
+/*TESTEMUNHAS*/
+
+/*FOOTER*/
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    color: #8f8f8f;
+    padding: 4rem 1rem;
+    gap: 2rem;
+}
+
+.download{
+    margin: 1rem 0;
+}
+
+.download>*{
+    margin: 1rem 0;
+}
+
+.download>p:first-child{
+    font-weight: bold;
+    color: #fff;
+}
+
+.download>div{
+    display: flex;
+}
+
+.download>div img{
+    width: 180px;
+}
+
+.logo-footer{
+    text-align: center;
+}
+
+.links-footer h3{
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.links-footer ul{
+    list-style: none;
+}
+
+.links-footer ul li{
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.copyright{
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+/*media queries*/
+
+@media (max-width: 800px){
+    .footer-content{
+        display: inline;
+        font-size: 0.8rem;
+    
+    }
+
+    .footer-content>div{
+        padding: 1rem;
+    }
+
+    .download>div{
+        display: inline;
+    }
+
+    .download>div img{
+        width: 120px;
+    }
+
+    .copyright{
+        font-size: 0.8rem;
+    }
+}
+/*footer*/
